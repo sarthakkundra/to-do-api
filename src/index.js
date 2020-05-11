@@ -4,7 +4,7 @@ const userRouter = require('./routes/user-route');
 const taskRouter = require('./routes/task-route');
 
 const app = express();
-const port = process.env.port;
+const port = process.env.PORT;
 
 //Converting the params to json object
 app.use(express.json());
