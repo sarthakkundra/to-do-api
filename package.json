@@ -5,7 +5,11 @@
   "main": "mongodb.js",
   "scripts": {
     "dev": "env-cmd ./config/dev.env nodemon src/index.js",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "env-cmd ./config/dev.env jest --watch"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +27,8 @@
   },
   "devDependencies": {
     "env-cmd": "^8.0.2",
-    "nodemon": "^2.0.3"
+    "jest": "^23.6.0",
+    "nodemon": "^2.0.3",
+    "supertest": "^3.4.1"
   }
 }
